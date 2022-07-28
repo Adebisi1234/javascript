@@ -178,3 +178,11 @@ for (let x of f) {
 // [3, "Mango"]
 
 // The entries() method does not change the original array.
+
+
+// Array includes()
+
+// ECMAScript 2016 introduced Array.includes() to arrays. This allows us to check if an element is present in an array (including NaN, unlike indexOf).
+
+fruits.includes("Mango"); // is true
+
