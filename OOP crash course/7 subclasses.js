@@ -9,3 +9,20 @@ class Book {
         return `${this.title} was written by ${this.author} in ${this.year}`;
     }
 }
+
+// Magazine Subclass
+
+class Magazine extends Book {
+    constructor(title, author, year, month) {
+        super(title,author,year);
+        this.month = month
+    }
+}
+
+
+// Instantiate Magazine
+
+const mag1 = new Magazine("Mag One", 
+"John Doe", "2020", "Jan")
+
+console.log(mag1)
