@@ -52,9 +52,9 @@
 
 // console.log(book1.getSummary())
 
-// creating a constructor
+// creating a constructoror
 
-// construct is basically a function
+// constructor is basically a function
 
 function Book(title, author, year) {
     this.title = title;
@@ -86,3 +86,15 @@ const book2 = new Book("Book 2", 'Jane doe', "2022")
 console.log(book1.getSummary())
 book1.revise("2022")
 console.log(book1)
+
+// Magazine constructor
+function Magazine(title, author, year, month) {
+    Book.call(this, title, author, year)
+
+    this.month = month
+}
+
+// Instantiate Magazine Object
+const mag1 = new Magazine("mag One", "john Doe", "2020", "Jan")
+
+console.log(mag1)

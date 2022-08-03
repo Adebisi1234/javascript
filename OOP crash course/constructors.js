@@ -1,6 +1,6 @@
 // creating a constructor
 
-// construct is basically a function
+// constructor is basically a function
 
 function Book(title, author, year) {
     this.title = title;
