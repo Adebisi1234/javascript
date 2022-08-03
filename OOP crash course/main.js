@@ -15,7 +15,7 @@
 
 // Window is the parent object of everything
 
-console.log(window)
+// console.log(window)
 
 //window.alert()
 
@@ -30,8 +30,43 @@ console.log(window)
 
 // Object literal
 
-const book1 = {
-    title: "Book one",
-    author: "John Doe",
-    year: "2022"
+// const book1 = {
+//     // below are properties of book1
+//     title: "Book one",
+//     author: "John Doe",
+//     year: "2022",
+//     // the below is an method 
+//     getSummary: function() {
+//         return `${this.title} was written by ${this.author} in ${this.year}`
+//     }
+// }
+
+// to call a individual property
+// console.log(book1.year)
+
+// to see a value of an object
+// console.log(Object.values(book1))
+//  to see keys
+// console.log(Object.keys(book1))
+// to call a method
+
+// console.log(book1.getSummary())
+
+// creating a constructor
+
+// construct is basically a function
+
+function Book(title, author, year) {
+    this.title = title;
+    this.author = author;
+    this.year = year;
+
+    this.getSummary = () => {
+        return `${this.title} was written by ${this.author} in ${this.year}`
+    }
 }
+
+const book1 = new Book("Book 1", 'John doe', "2022")
+const book2 = new Book("Book 2", 'Jane doe', "2022")
+
+console.log(book1)
