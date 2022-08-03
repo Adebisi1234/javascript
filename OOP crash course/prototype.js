@@ -1,6 +1,3 @@
-
-// creating a constructor
-
 // construct is basically a function
 
 function Book(title, author, year) {
